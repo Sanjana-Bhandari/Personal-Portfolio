@@ -13,13 +13,13 @@ export const Banner = () => {
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const period = 2000;
 
-  useEffect(() => {
-    const ticker = setInterval(() => {
-      tick();
-    }, delta);
+ useEffect(() => {
+  const ticker = setInterval(() => {
+    tick();
+  }, delta);
 
-    return () => clearInterval(ticker);
-  }, [text]);
+  return () => clearInterval(ticker);
+}, [text, delta]);
 
   const tick = () => {
     let i = loopNum % toRotate.length;
@@ -73,7 +73,7 @@ export const Banner = () => {
           </Col>
 
           <Col xs={12} md={6} xl={5}>
-            <img src={frontendImg} alt="My Photo" className="img-fluid" />
+           <img src={frontendImg} alt="Sanjana" className="img-fluid" />
           </Col>
         </Row>
       </Container>

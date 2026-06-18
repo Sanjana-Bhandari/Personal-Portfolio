@@ -4,7 +4,7 @@ import { Banner } from './components/Banner';
 import { Skills } from './components/Skills';
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Projects } from './components/Projects';
-import { ProjectCard } from './components/ProjectCard';
+// import { ProjectCard } from './components/ProjectCard';
 import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
 
