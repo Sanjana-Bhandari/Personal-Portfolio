@@ -31,7 +31,7 @@ export const Contact = () => {
 
     try {
 
-      const response = await fetch("http://localhost:5000/contact", {
+      const response = await fetch("http://localhost:5000/api/contact", {
         method: "POST",
         headers: {
           "Content-Type": "application/json;charset=utf-8",
@@ -43,7 +43,7 @@ export const Contact = () => {
 
       setButtonText("Send Message");
 
-      if (response.status === 200) {
+      if (response.status === 201) {
         setStatus({
           success: true,
           message: "Message sent successfully!"

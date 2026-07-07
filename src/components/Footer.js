@@ -1,13 +1,12 @@
 import { Col, Container, Row } from "react-bootstrap";
-import { MailchimpForm } from "./MailchimpForm";
+import { Newsletter } from "./Newsletter";
 import { FaLinkedin, FaFacebookF, FaInstagram } from "react-icons/fa"; 
 
 export const Footer = () => {
   return (
     <footer className="footer">
       <Container>
-        <MailchimpForm />
-
+      <Newsletter />
         <Row className="align-items-center justify-content-between">
           <Col sm={6}>
             <h2 className="font-bold m-0"></h2>

@@ -1,0 +1,123 @@
+
+body {
+  background: #121212;
+}
+
+.admin-login-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #121212;
+}
+
+.admin-login-card {
+  width: 380px;
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(170, 54, 124, 0.4);
+  border-radius: 20px;
+  padding: 35px;
+  box-shadow: 0 0 25px rgba(170, 54, 124, 0.4);
+  animation: fadeIn 0.8s ease;
+}
+
+.admin-login-card h2 {
+  text-align: center;
+  color: white;
+  margin-bottom: 25px;
+}
+
+.admin-input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 18px;
+  border-radius: 10px;
+  border: 1px solid #aa367c;
+  background: rgba(255,255,255,0.08);
+  color: white;
+  outline: none;
+}
+
+.admin-input::placeholder {
+  color: #ccc;
+}
+
+.admin-btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  background: linear-gradient(90deg, #aa367c, #4a2fbd);
+  transition: 0.3s;
+}
+
+.admin-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 20px rgba(170,54,124,0.6);
+}
+
+.admin-message {
+  margin-top: 18px;
+  text-align: center;
+  color: white;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(35px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* =========================
+   Responsive Design
+========================= */
+
+@media (max-width: 768px){
+
+    .admin-login-card{
+        width:90%;
+        padding:25px;
+    }
+
+    .admin-login-card h2{
+        font-size:28px;
+    }
+
+    .admin-input{
+        padding:11px;
+        font-size:15px;
+    }
+
+    .admin-btn{
+        padding:11px;
+        font-size:15px;
+    }
+
+}
+
+@media (max-width:480px){
+
+    .admin-login-container{
+        padding:20px;
+    }
+
+    .admin-login-card{
+        width:100%;
+        padding:20px;
+        border-radius:16px;
+    }
+
+    .admin-login-card h2{
+        font-size:24px;
+    }
+
+}
