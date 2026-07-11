@@ -23,7 +23,7 @@ export const Newsletter = () => {
     setMessage("Subscribing...");
 
     try {
-      const response = await fetch("http://localhost:5000/api/newsletter", {
+      const response = await fetch("https://personal-portfolio-r2t9.onrender.com/api/newsletter", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
