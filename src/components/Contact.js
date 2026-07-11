@@ -31,7 +31,7 @@ export const Contact = () => {
 
     try {
 
-      const response = await fetch("https://portfolio-backend.onrender.com/api/contact", {
+      const response = await fetch("https://personal-portfolio-r2t9.onrender.com/api/contact", {
         method: "POST",
         headers: {
           "Content-Type": "application/json;charset=utf-8",
