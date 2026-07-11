@@ -621,37 +621,27 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   letter-spacing: 0.5px;
   line-height: 1.2rem;
 }
-.new-email-bx {
-  background: #fff;
-  padding: 5px;
-  border-radius: 20px;
-  position: relative;
-  z-index: 0px;
-  display: flex;
-  align-items: center;
+.new-email-bx{
+  background:#fff;
+  padding:5px;
+  border-radius:20px;
+  position:relative;
+  display:flex;
+  align-items:center;
+  gap:8px;
+  width:100%;
 }
-.new-email-bx::before {
-  content: "";
-  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
-  border-radius: 20px;
-  position: absolute;
-  z-index: -1;
-  top: -1px;
-  left: -1px;
-  bottom: -1px;
-  right: -1px;
+
+.new-email-bx input{
+  flex:1;
+  min-width:0;
 }
-.new-email-bx::after {
-  content: "";
-  background: #fff;
-  border-radius: 20px;
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
+
+.new-email-bx button{
+  flex-shrink:0;
+  margin:0;
 }
+/*  */
 .new-email-bx input {
   width: 100%;
   color: #121212;
@@ -679,10 +669,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .newsletter-bx h3 {
   text-align: left;
-  margin-left: -40px;
+  margin-left: 0px;
 }
 .new-email-bx button {
-  margin-right: -40px;
+  margin-right: 0;
+  margin-left: 8px;
 }
 
 .footer img {
@@ -992,9 +983,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     text-align: center;
   }
 
-  .new-email-bx {
-    flex-direction: row;
-  }
+  .new-email-bx{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+}
 
   .new-email-bx input {
     width: 100%;
@@ -1004,6 +997,30 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     padding: 15px 25px;
     white-space: nowrap;
   }
+}
+
+
+@media (min-width:992px){
+
+.newsletter-bx .row{
+    display:flex;
+    align-items:center;
+}
+
+.newsletter-bx .col-xl-5{
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+}
+
+.newsletter-bx .col-xl-7{
+    display:flex;
+    align-items:center;
+}
+
+.new-email-bx{
+    width:100%;
+}
 }
 
 
