@@ -14,7 +14,10 @@ const app = express();
 
 // Middleware
 app.use(cors({
-  origin: "https://personal-portfolio-2is.pages.dev",
+  origin: [
+    "http://localhost:3000",
+    "https://personal-portfolio-2is.pages.dev"
+  ],
   methods: ["GET", "POST"],
   credentials: true
 }));
