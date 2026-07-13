@@ -27,7 +27,7 @@ const AdminDashboard = () => {
     };
 
     // Dashboard Count
-    fetch("http://localhost:5000/api/admin/dashboard", { headers })
+    fetch("https://personal-portfolio-r2t9.onrender.com/api/admin/dashboard", { headers })
       .then((res) => res.json())
       .then((data) => {
         if (data.success) {
@@ -38,7 +38,7 @@ const AdminDashboard = () => {
       });
 
     // Contact Messages
-    fetch("http://localhost:5000/api/admin/messages", { headers })
+    fetch("https://personal-portfolio-r2t9.onrender.com/api/admin/messages", { headers })
       .then((res) => res.json())
       .then((data) => {
         if (data.success) {
@@ -47,7 +47,7 @@ const AdminDashboard = () => {
       });
 
     // Subscribers
-    fetch("http://localhost:5000/api/admin/subscribers", { headers })
+    fetch("https://personal-portfolio-r2t9.onrender.com/api/admin/subscribers", { headers })
       .then((res) => res.json())
       .then((data) => {
         if (data.success) {
